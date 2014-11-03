@@ -1,5 +1,6 @@
 .z-top-header{
 	border-bottom: 2px solid rgba(250, 150, 35, 1);
+	z-index: 999;
 }
 #z-logo-area{
 	display: inline-block;
@@ -20,7 +21,7 @@
 }
 .nav{
 	//float: right;
-	background-color: rgba(0,0,0,0.85);
+	background-color: rgba(0,0,0,0.9);
 	margin-right: 20%;
 }
 /*.navbar-nav li > a{ to target the direct childrens only*/
@@ -37,3 +38,7 @@
 .navbar .nav li:hover{/*not working right now because HOVER event is being listened by JQuery*/
 	background-color: rgba(245,91,11,1);
 }
+/*.z-custom-carousel{//commented for now due to layout issues on smaller screens
+	top:222px;
+	height: 68%;
+}*/

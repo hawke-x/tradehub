@@ -9,9 +9,12 @@
 	<body id="home">
 		<section class="container">
 			<div class="content row">
-				<?php include "_/components/php/header.php"; ?>
+				<?php include "_/components/php/header.php";?>
+				<?php include "_/components/php/snippet-carousel.php";?>
 
 				<section class="main col col-lg-8"><!-- define a section as COLUMN folowed by 8-Coloumns in total -->					
+					<?php include "_/components/php/article-intro.php";?>
+					
 					<h2>Main Content</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
