@@ -1,0 +1,6 @@
+.DS_Store
+_/node_modules
+_/gulpfile
+.tmp
+.sass-cache
+_/builds/**/images/*
