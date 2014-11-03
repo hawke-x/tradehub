@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Trade Hub</title>
+		<title>Trade Hub -- Services</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="_/css/bootstrap.min.css" rel="stylesheet" media="screen">
 		<link href="_/css/mystyle.css" rel="stylesheet" media="screen">
 	</head>
-	<body id="home">
+	<body id="services">
 		<section class="container">
 			<div class="content row">
 				<section class="main col col-lg-8"><!-- define a section as COLUMN folowed by 8-Coloumns in total -->

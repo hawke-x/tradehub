@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Trade Hub</title>
+		<title>Trade Hub -- Privacy Policy</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="_/css/bootstrap.min.css" rel="stylesheet" media="screen">
 		<link href="_/css/mystyle.css" rel="stylesheet" media="screen">
 	</head>
-	<body id="home">
+	<body id="privacypolicy">
 		<section class="container">
 			<div class="content row">
 				<section class="main col col-lg-8"><!-- define a section as COLUMN folowed by 8-Coloumns in total -->
+					<h1>This is Privacy Policy page</h1>
 					<h2>Main Content</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
