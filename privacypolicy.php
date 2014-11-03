@@ -9,7 +9,9 @@
 	<body id="privacypolicy">
 		<section class="container">
 			<div class="content row">
-				<section class="main col col-lg-8"><!-- define a section as COLUMN folowed by 8-Coloumns in total -->
+				<?php include "_/components/php/header.php"; ?>
+				
+				<section class="main col col-lg-8"><!-- define a section as COLUMN folowed by 8-Coloumns in total -->					
 					<h1>This is Privacy Policy page</h1>
 					<h2>Main Content</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -28,7 +30,8 @@
 					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</section><!-- sidebar -->
-			</div>	
+			</div><!-- content -->
+			<?php include "_/components/php/footer.php"; ?>
 		</section><!-- container -->
 
 		<script src="_/js/jquery.js"></script>

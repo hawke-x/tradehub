@@ -9,7 +9,9 @@
 	<body id="home">
 		<section class="container">
 			<div class="content row">
-				<section class="main col col-lg-9"><!-- define a section as COLUMN folowed by 8-Coloumns in total -->
+				<?php include "_/components/php/header.php"; ?>
+
+				<section class="main col col-lg-8"><!-- define a section as COLUMN folowed by 8-Coloumns in total -->					
 					<h2>Main Content</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -18,7 +20,7 @@
 					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</section><!--main area-->
-				<section class="sidebar col col-lg-3">
+				<section class="sidebar col col-lg-4">
 					<h2>Sidebar</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -27,7 +29,8 @@
 					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</section><!-- sidebar -->
-			</div>	
+			</div> <!-- end of "content row" -->	
+			<?php include "_/components/php/footer.php"; ?>
 		</section><!-- container -->
 
 		<script src="_/js/jquery.js"></script>

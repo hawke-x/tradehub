@@ -1,6 +1,39 @@
-.container{
-	border: 2px solid purple;
+.z-top-header{
+	border-bottom: 2px solid rgba(250, 150, 35, 1);
 }
-.main{
-	border: 1px solid pink;
+#z-logo-area{
+	display: inline-block;
+}
+.z-logo-area > a{
+	display: inline-block;
+}
+.z-logo-area h1{
+	display: inline-block;
+	transform: translateY(25%);
+	font-size: 3.5em;
+}
+.z-logo-area #hub-h1{
+	transform: translate(-30%,100%);
+}
+.navbar{
+	background-color: rgba(245, 91, 11, 1);
+}
+.nav{
+	//float: right;
+	background-color: rgba(0,0,0,0.85);
+	margin-right: 20%;
+}
+/*.navbar-nav li > a{ to target the direct childrens only*/
+	.nav a{
+	color: rgba(250, 150, 35, 1);
+}
+.navbar .nav .z-active-nav{
+	background-color: rgba(245, 91, 11, 1);	
+}
+.navbar .nav .z-active-nav > a{
+	color: rgba(0,0,0,1);
+	font-weight: bold;
+}
+.navbar .nav li:hover{/*not working right now because HOVER event is being listened by JQuery*/
+	background-color: rgba(245,91,11,1);
 }
