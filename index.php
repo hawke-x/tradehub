@@ -7,7 +7,13 @@
 		<link href="_/css/mystyle.css" rel="stylesheet" media="screen">
 	</head>
 	<body id="home">
+		
 		<section class="container">
+			<!--<div class="content row" >-->
+		<section class="personal-watch">
+			<?php include "_/components/php/snippet-cart-bar.php";?>
+		</section>		
+			<!--</div>-->
 			<div class="content row">
 				<?php include "_/components/php/header.php";?>
 				<?php include "_/components/php/snippet-carousel.php";?>
@@ -32,8 +38,14 @@
 					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</section><!-- sidebar -->
-			</div> <!-- end of "content row" -->	
-			<?php include "_/components/php/footer.php"; ?>
+			</div> <!-- end of "content row" -->
+
+			<div class="content row clearfix">
+				<?php include "_/components/php/snippet-services.php"; ?>
+			</div><!-- end of services content row -->
+			<div class="content row clearfix">
+				<?php include "_/components/php/footer.php"; ?>
+			</div><!-- Footer end -->
 		</section><!-- container -->
 
 		<script src="_/js/jquery.js"></script>
