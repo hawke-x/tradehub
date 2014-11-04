@@ -10,9 +10,9 @@
 		
 		<section class="container">
 			<!--<div class="content row" >-->
-		<section class="personal-watch">
+		<!-- <section class="personal-watch"> -->
 			<?php include "_/components/php/snippet-cart-bar.php";?>
-		</section>		
+		<!-- </section>	 -->	
 			<!--</div>-->
 			<div class="content row">
 				<?php include "_/components/php/header.php";?>

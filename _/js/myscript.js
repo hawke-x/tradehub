@@ -5,6 +5,8 @@
 // });
 $(document).ready(function(){
 
+	var $windowHandle = window;
+
 	$("#home a:contains('Home'):first").parent().addClass('z-active-nav');
 	$("#products a:contains('Products'):first").parent().addClass('z-active-nav');
 	$("#services a:contains('Services'):first").parent().addClass('z-active-nav');
@@ -27,11 +29,51 @@ $(document).ready(function(){
 			});
 	/*----------------------------------------------------------------------------------------------------*/
 
+	/*---Functionality of navbar triggering-------------------------------------*/
 	$(".navbar").find(".dropdown").hover(function(){
 		$('.dropdown-menu', this).fadeIn('800');/*Dropdown fades IN*/
 	}, function(){
 		$('.dropdown-menu', this).fadeOut('fast');/*Dropdown fades OUT*/
 	});/*hover function*/
+	/*---------------------------------------------------------------------------*/
+
+	/*--------------FUNCTIONALITY FOR ITEM -> CART TRAVEL-----------------------*/
+	var $prodItems = $('.item-container');//getting access to items container
+	$prodItems.find('.item-content').on('click', function(e) {/*currently we are searching for click event on whole div, but we can modify it later*/
+		// console.log(this.id);
+		e.preventDefault(); /*donot follow if its a link*/
+		var $selItem = $(this), /*This is the SELECTED/CLICKED Item*/
+			// $ghost = $selItem.clone().appendTo($selItem).addClass('item-ghost');
+			
+			// $ghost =  $selItem.clone().removeClass('div-action-pos').addClass('item-ghost');
+			$ghost = $selItem.clone().appendTo($selItem.parent()).addClass('item-ghost');
+			// $selItem.after($ghost);
+
+			
+			console.log('Coords of GHOST element; left:' + $ghost.offset().left + ' top: ' + $ghost.offset().top);
+
+			/*Animation part on ghost----------------------------*/
+				var selCoords = $selItem.offset(),
+					$targetCart = $('#static-cart-bar'),
+					targetCoords = $targetCart.offset();
+
+					console.log('Coords of selected element; left:' + selCoords.left + ' top: ' + selCoords.top);
+					console.log('Coords of target element; left:' + targetCoords.left + ' top: ' + targetCoords.top);
+
+				$ghost.animate({
+					left: -selCoords.left - 21 + $windowHandle.scrollX,
+					top: -selCoords.top - 17 + $windowHandle.scrollY,
+					width: $windowHandle.screen.availWidth * 0.96,
+					opacity: 0
+				},
+				 1500, "swing", function(e){$(this).remove(); console.log("Item has been removed");
+				 	});
+			/*---------------------------------------------------*/
+
+		// $(this).clone().css('background-color','red').css('z-index', 1999);
+	});
+
+	/*--------------------------------------------------------------------------*/
 });
 
 //-----------------START of CART Tray Animation Function----------------------

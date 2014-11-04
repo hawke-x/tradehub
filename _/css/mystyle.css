@@ -67,3 +67,57 @@
 	color: #000; font-size:medium; z-index:55; visibility:visible; opacity: 0.85;
 }
 /*------------------------------------------------------------------------------*/
+
+/*---------Individual Item related CSS on Products page--------------------------------------*/
+			.item-container{
+				//max-width: 980px;
+				width: 95%;
+				margin: 0 auto;
+				position: relative;
+
+			}
+			.item-container .div-action-pos{
+				position: relative;
+			}
+			.item-container .div-action{
+				width: 100%;
+				display: block;
+				height: 70px;
+				border: 1px solid rgba(245,91,11,1);
+				margin: 0 0 5px 0px;
+
+			}
+			.item-container .div-action .item-content{
+				width: 100%;
+				height: inherit;
+				transition-property: background-color, color;
+				transition-duration: 0.5s;
+				transition-timing-function: ease-in-out;
+				/*position: absolute;*/
+				/*left:50px;*/
+				/*transform: translateX(50px);*/
+
+			}
+			.item-container .div-action .item-content:hover{
+				cursor: pointer;
+				left: 0;
+				/*width: 100%;*/
+				background-color: rgba(245,91,11,1);
+				color:blue;
+				transform: scale(1.05, 1.5) translateX(0px);
+				z-index: 50;
+
+				}
+/*-------------------------------------------------------------------------------------------*/
+.item-ghost{/*Ghost of an item div that will be used for cloning purpose*/
+	position: absolute;
+	width: 100%
+	z-index: 999;
+	background-color: rgba(245,91,11,1);
+	opacity: 1;
+}
+/*.main{//temporarily commented the MAIN CONTAINER SECTION FOR CONTENT
+	border-right: 5px solid rgba(245,91,11,1);
+	border-left: 5px solid rgba(245,91,11,1);
+	border: 2px dashed rgba(245,91,11,1);
+}*/

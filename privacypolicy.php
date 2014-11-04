@@ -8,6 +8,8 @@
 	</head>
 	<body id="privacypolicy">
 		<section class="container">
+			<?php include "_/components/php/snippet-cart-bar.php";?>
+
 			<div class="content row">
 				<?php include "_/components/php/header.php"; ?>
 				

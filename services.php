@@ -8,6 +8,8 @@
 	</head>
 	<body id="services">
 		<section class="container">
+			<?php include "_/components/php/snippet-cart-bar.php";?>
+
 			<div class="content row">
 				<?php include "_/components/php/header.php"; ?>
 				
