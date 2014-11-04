@@ -63,12 +63,15 @@
 #cart-icon{height: 25px; width:10%; display:inline-block; position:relative; top:0px; z-index:999}
 #logo-cart {height: 25px; width:25px; display:inline-block; position:relative; margin-left:35%; top:0px; background-image:url(images/ie_transparency.png); background-color: #fff; z-index:999}
 
-#expandCart{position: absolute; width:100%; height:115px; top:-150px; margin: 0px auto; background-color:rgba(245,91,11,1); 
-	color: #000; font-size:medium; z-index:55; visibility:visible; opacity: 0.85;
-}
+#expandCart{position: absolute; width:100%; height:150px; top:-185px; margin: 0px auto; background-color:rgba(245,91,11,1); 
+	color: #000; font-size:medium; z-index:55; visibility:visible; opacity: 0.85; }
+
+	.cart-item{
+		
+	}
 /*------------------------------------------------------------------------------*/
 
-/*---------Individual Item related CSS on Products page--------------------------------------*/
+/*INDIVIDUAL Item related CSS on PRODUCTS PAGE--------------------------------------*/
 			.item-container{
 				//max-width: 980px;
 				width: 95%;
@@ -80,9 +83,10 @@
 				position: relative;
 			}
 			.item-container .div-action{
+				position:relative;
 				width: 100%;
 				display: block;
-				height: 70px;
+				height: 85px;
 				border: 1px solid rgba(245,91,11,1);
 				margin: 0 0 5px 0px;
 
@@ -90,25 +94,98 @@
 			.item-container .div-action .item-content{
 				width: 100%;
 				height: inherit;
+				position:absolute;
+				
+				-webkit-transition-property: background-color, color;
+				-webkit-transition-duration: 0.5s;
+				-webkit-transition-timing-function: ease-in-out;
+				-moz-transition-property: background-color, color;
+				-moz-transition-duration: 0.5s;
+				-moz-transition-timing-function: ease-in-out;
 				transition-property: background-color, color;
 				transition-duration: 0.5s;
 				transition-timing-function: ease-in-out;
 				/*position: absolute;*/
 				/*left:50px;*/
 				/*transform: translateX(50px);*/
-
-			}
-			.item-container .div-action .item-content:hover{
-				cursor: pointer;
-				left: 0;
-				/*width: 100%;*/
-				background-color: rgba(245,91,11,1);
-				color:blue;
-				transform: scale(1.05, 1.5) translateX(0px);
 				z-index: 50;
 
-				}
-/*-------------------------------------------------------------------------------------------*/
+			}
+			.item-container .div-action .item-content a{
+					display: inline-block;
+					padding-left: 50px;
+					z-index: 550;
+			}
+			.item-container .div-action .item-content .item-img-cont{
+				width:15%;
+				height:inherit;
+				float:left;
+				/*z-index: 52;*/
+				/*display: inline-block;*/
+				margin-top: 0px;
+				border-right: 2px dashed black;
+				margin-right: 5px;
+			}
+			.item-container .div-action .item-content .item-img-cont img{
+					width:auto;
+					height:auto;
+					margin-left:20%;
+					-webkit-transform: translateY(10%);
+					-moz-transform: translateY(10%);
+					transform: translateY(10%);
+					/*float:left;*/
+			}
+			.item-container .div-action .item-content h3{
+					display: inline;
+					padding-left: 5px;
+					z-index: 550;
+					/*color:rgba(245,91,11,1);*/
+					color: black;
+			}
+			.item-container .div-action .item-content  .item-details{
+				display: inline-block;
+				width: 70%;
+			}
+			.item-container .div-action .item-content  .item-details p{
+				display: inline;
+			}
+			
+			/*----ADD TO CART Option after every Item------------------------------------------------------*/
+			 .item-container .div-action .item-content .add-to-cart{
+				display: inline-block;
+				top: 0;
+				position: absolute;
+				height: inherit;
+				width: 15%;
+				margin-left: 5px;
+				border-left: 2px dashed black;
+			}
+			.item-container .div-action .item-content .add-to-cart img{
+				margin-left: 28%;
+				margin-top: 5%;
+			}
+			.item-container .div-action .item-content .add-to-cart a{/*change the generic effect on links later*/
+				display: block;
+				color:black;
+				text-align: center;
+				z-index: 550;
+			}
+			/*------------------END of series of classes for 'ADD TO CART' Option at end of every item-----*/
+			
+			.item-container .div-action .item-content:hover{ /*Hover over main Container of an Individual ITEM*/
+				cursor: pointer;
+				/*left: 0;*/
+				/*width: 100%;*/
+				background-color: rgba(245,91,11,1);
+				color: black;
+				-webkit-transform: scale(1.05, 1.5) translateX(0px);
+				-moz-transform: scale(1.05, 1.5) translateX(0px);
+				transform: scale(1.1, 1.1) translateX(0px);
+				z-index: 151;
+
+			}/*End of Hover function over individual item*/
+/*--------------END OF "INDIVIDUAL Item related CSS" on PRODUCTS PAGE--------------------------------------*/
+
 .item-ghost{/*Ghost of an item div that will be used for cloning purpose*/
 	position: absolute;
 	width: 100%

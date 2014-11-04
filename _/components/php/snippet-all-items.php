@@ -4,9 +4,23 @@
 			
 			<div class= "div-action div-action-pos" id="sub-1">
 			     <div class="item-content">
-					<p>hello world from 1st</p>
-				</div>
-			</div>
+			     	
+			     	<div class="item-img-cont">
+			     		<img src="../../../images/items/grocery/ketchup_tn.png" alt="spicy ketchup thumbnail">
+					</div><!-- end of image container -->
+					
+					<h3>National Tomato Ketchup</h3>
+					<div class="item-details"><p>The finest of all tomato Ketchups and the most preferable by people of all age. Try National Chili Garlic tomato ketchup as well to tantize your taste buds.</p></div>
+					
+					<!--ADD TO CART option at end of every Item-->
+					<div class="add-to-cart">
+						<img src="../../../images/logo/add-to-cart_logo.png" alt="Add to Cart"/>
+						<a href="#">Add to Cart</a>
+					</div><!-- ADD to CART area -->
+				
+				</div><!-- Item Wrapper ending here -->
+			</div><!-- End of individual Item -->
+			
 			<div class= "div-action div-action-pos"  id="sub-2">
 				<div class="item-content">
 					<p>hello world from 2nd</p>

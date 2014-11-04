@@ -32,4 +32,5 @@
 			</ul><!-- nav -->
 		</div><!-- navbar -->
 	</header><!-- header -->
-	</div>
+	</div><!-- column design ending -->
+</div><!-- end of header -->
