@@ -67,5 +67,13 @@
 			</div><!-- end of 7th item -->
 
 	</div><!-- items container -->
-
+	
+	<!--This is a container which can overlay with product details and require confirmation for adding to cart-->
+		<div class="modal fade bs-example-modal-lg" id="personal-mod" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+			  	<div class="modal-dialog modal-lg">
+			    	<div class="modal-content">
+			      		<h1>Who dares to call me outside?</h1>
+			    	</div>
+			  	</div>
+		</div>
 </div><!-- container around items container -->

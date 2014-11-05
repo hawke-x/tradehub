@@ -42,6 +42,9 @@ $(document).ready(function(){
 	$prodItems.find('.item-content').on('click', function(e) {/*currently we are searching for click event on whole div, but we can modify it later*/
 		// console.log(this.id);
 		e.preventDefault(); /*donot follow if its a link*/
+
+		$('#personal-mod').modal({keyboard:false});
+		
 		var $selItem = $(this), /*This is the SELECTED/CLICKED Item*/
 			// $ghost = $selItem.clone().appendTo($selItem).addClass('item-ghost');
 			
@@ -50,26 +53,30 @@ $(document).ready(function(){
 			// $selItem.after($ghost);
 
 			
-			console.log('Coords of GHOST element; left:' + $ghost.offset().left + ' top: ' + $ghost.offset().top);
+			// console.log('Coords of GHOST element; left:' + $ghost.offset().left + ' top: ' + $ghost.offset().top);
 
 			/*Animation part on ghost----------------------------*/
 				var selCoords = $selItem.offset(),
 					$targetCart = $('#static-cart-bar'),
 					targetCoords = $targetCart.offset();
 
-					console.log('Coords of selected element; left:' + selCoords.left + ' top: ' + selCoords.top);
-					console.log('Coords of target element; left:' + targetCoords.left + ' top: ' + targetCoords.top);
-
+					// console.log('Coords of selected element; left:' + selCoords.left + ' top: ' + selCoords.top);
+					// console.log('Coords of target element; left:' + targetCoords.left + ' top: ' + targetCoords.top);
+	/*----------------TEST WHERE ANIMATION IS TRIGGERED AFTER MODEL IS CLOSED----------------------------------*/
+	$('#personal-mod').on('hidden.bs.modal', function (e) {
+  			// do something...
+  			//alert('Time to go');
+			
 				$ghost.animate({
 					left: -selCoords.left - 21 + $windowHandle.scrollX,
 					top: -selCoords.top - 17 + $windowHandle.scrollY,
 					width: $windowHandle.screen.availWidth * 0.96,
 					opacity: 0
 				},
-				 1500, "swing", function(e){$(this).remove(); console.log("Item has been removed");
+				 1500, "swing", function(e){$(this).remove(); /*console.log("Item has been removed");*/
 				 	});
 			/*---------------------------------------------------*/
-
+	});
 		// $(this).clone().css('background-color','red').css('z-index', 1999);
 	});
 
