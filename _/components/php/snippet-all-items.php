@@ -11,7 +11,7 @@
 					
 					<div class="item-details">
 						<h3>National Tomato Ketchup</h3>
-						<p>The finest of all tomato Ketchups and the most preferable by people of all age. Try National Chili too, its Awesome!!</p>
+						<p class="cust-p">The finest of all tomato Ketchups and the most preferable by people of all age. Try National Chili too, its Awesome!!</p>
 					</div>
 					
 					<!--ADD TO CART option at end of every Item-->
@@ -67,7 +67,7 @@
 			</div><!-- end of 7th item -->
 
 	</div><!-- items container -->
-	
+
 	<!--This is a container which can overlay with product details and require confirmation for adding to cart-->
 		<div class="modal fade bs-example-modal-lg" id="personal-mod" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 			  	<div class="modal-dialog modal-lg">
