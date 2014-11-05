@@ -9,13 +9,15 @@
 			     		<img src="../../../images/items/grocery/ketchup_tn.png" alt="spicy ketchup thumbnail">
 					</div><!-- end of image container -->
 					
-					<h3>National Tomato Ketchup</h3>
-					<div class="item-details"><p>The finest of all tomato Ketchups and the most preferable by people of all age. Try National Chili Garlic tomato ketchup as well to tantize your taste buds.</p></div>
+					<div class="item-details">
+						<h3>National Tomato Ketchup</h3>
+						<p>The finest of all tomato Ketchups and the most preferable by people of all age. Try National Chili too, its Awesome!!</p>
+					</div>
 					
 					<!--ADD TO CART option at end of every Item-->
 					<div class="add-to-cart">
+						<div><a href="#">Add to Car</a></div>
 						<img src="../../../images/logo/add-to-cart_logo.png" alt="Add to Cart"/>
-						<a href="#">Add to Cart</a>
 					</div><!-- ADD to CART area -->
 				
 				</div><!-- Item Wrapper ending here -->
